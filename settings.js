@@ -1,167 +1,88 @@
-///SC RECODE BY DINZID VyL x Malvin King
-// © RECODE BY Malvin King 2022 - 2025
-// Cr : @XdKing2 
-//DO NOT DELETE CREDITS!! DELETE? = I'LL ENCRYPT EVERYTHING!! 
+/* ═════════════════════════════════
+ *  🚀  MALVIN KING TECH - YT
+ * ═════════════════════════════════
+ *  
+ *  📺  YouTube    : https://www.youtube.com/@malvintech2
+ *  💻  GitHub     : https://github.com/XdKing2
+ *  🌐  Website    : Coming Soon
+ *  🪀  WhatsApp  : https://whatsapp.com/channel/0029VbB3YxTDJ6H15SKoBv3S
+ *  
+ *  👨‍💻  Developer  : Malvin King
+ *  📧  Contact    : Available on GitHub
+ *  
+ *  ⚠️   Please do not remove this watermark
+ * ═════════════════════════════════
+ *  © 2025 Malvin Tech - All Rights Reserved
+ * ════════════════════════════════ */
 
-const chalk = require("chalk")
-const fs = require("fs")
-//auto presence update
-global.autoTyping = false //auto typing in group chat (true to enable, false to disable)
-global.autoRecord = false //auto recording (true to enable, false to disable)
-global.autoblockmorroco = true //auto block 212 (true to enable, false to disable)
-global.autokickmorroco = true //auto kick 212 (true to enable, false to disable) 
-global.antispam = false //auto kick spammer (true to enable, false to disable)
-//////////////////////////////////////////////////////////////////////////////////
+const fs = require('fs')
+const chalk = require('chalk')
 
-//LIMIT//
+//———————[ Owner Config ]——————————//
 
-//=========EDIT THE THUMBNAIL MENU & ALLMENU PART==========//
+global.ownernumber = '263714757857' // Change to your number
+global.ownername = 'ᴍᴀʟᴠɪɴ ᴋɪɴɢ' // add ur name
+global.botMode ='public' // change to public or self
 
-global.thumbnail = 'https://files.catbox.moe/7ud9t7.jpg', //YOUR MENU THUMBNAIL
-global.dinzmenu = 'https://files.catbox.moe/33o6jd.jpg', //YOUR MENU BUTTON THUMBNAIL
-/////////////////////////////////////////////////////////////////////////////////
+//————————[ Bot Config ]—————————//
 
-//LIMIT//
+global.SESSION_ID = ""; // add ur session id starts with starcore~
+global.namabot = "ᴍᴋ-ʙᴏᴛ"
+global.nomorbot = '263714757857' // Change to yourbot number
+global.pair = "MRMALVIN"
+global.version = '1.0.1'
+global.autojoingc = false
+global.anticall = false
+global.autoreadsw = false
+global.autoread = false
 
-/////////////////////// WELCOME SETTINGS ///////////////
-global.wlcmimg = 'https://files.catbox.moe/641pvo.jpg'
-global.leftimg = 'https://files.catbox.moe/33o6jd.jpg'
-global.wlcm = true //FOR AUTO WELCOME
-global.textwlcm = `
-┌─┉─ • ─┉─  ── .✦
-│Welcome new member, introduction please!
-│Name:
-│Ask:
-│Age:
-│Make sure to introduce yourself properly ૮₍꜆꜄ ˃ ³ ˂ ₎ა
-└─┉─¡! • !¡─┉─ ── .✦
-`
+//——————[ Social Media Config ]———————//
+global.web = "https://whatsapp.com/channel/0029VbB3YxTDJ6H15SKoBv3S"
+global.linkSaluran = "https://whatsapp.com/channel/0029VbB3YxTDJ6H15SKoBv3S"
+global.idSaluran = "120363402507750390@newsletter"
+global.nameSaluran = "Malvin Tech Ch."
 
-///////////////////)/)) FAKE REPLY/FAKE QUOTED //////////////////))/
-global.replyyoimiya = 'https://files.catbox.moe/641pvo.jpg'
-global.replyMalvinID = 'https://files.catbox.moe/33o6jd.jpg'
-global.replydinz = 'https://files.catbox.moe/7ud9t7.jpg'
-global.reply = 'https://files.catbox.moe/33o6jd.jpg'
-global.replyviex = 'https://files.catbox.moe/641pvo.jpg'
-
-//////////////////////YOUR MENU DISPLAY SETTINGS//////////////////
-global.ig = '@techlord01' //YOUR INSTAGRAM NAME
-global.yt = 'malvintech2' //YOUR YOUTUBE NAME, IF NONE THEN LEAVE BLANK
-global.ttowner = 'malvinquotes' //YOUR TIKTOK NAME
-global.ownername = 'ᴅᴇᴠ : ᴍᴀʟᴠɪɴ ᴋɪɴɢ' //YOUR NAME
-global.owner = ['263780166288'] // ALSO SET THIS IN DATABASE FOLDER 
-global.ownernomer = '263780166288' //YOUR NUMBER
-global.socialm = 'GitHub: -'
-global.location = 'Indonesia' 
-global.nameCreator = 'ᴅᴇᴠ : ᴍᴀʟᴠɪɴ ᴋɪɴɢ'
-/////////////////////////////////////////////////////////////////////////////////
+//————————[ Watermark Config ]———————//
+global.packname = 'Stick By Mk'
+global.author = 'YT Malvin King Tech'
+global.foother = 'Made By Malvin King'
 
 
-//==================BOT SETTINGS===========================\\
-global.botname = "MK | BOT" //YOUR BOT NAME
-global.ownernumber = '263780166288' //YOUR NUMBER
-global.botnumber = '263780166288' //YOUR NUMBER
-global.ownername = 'ᴅᴇᴠ : ᴍᴀʟᴠɪɴ ᴋɪɴɢ' //YOUR NAME
-global.idSaluran = "120363398430045533@newsletter" //YOUR CHANNEL ID
-global.idch = "120363398430045533@newsletter" //YOUR CHANNEL ID
-global.chat = '120363398430045533@newsletter'
-global.namaSaluran = "MK | MD"
-global.linkSaluran = "https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A"
-global.ownerNumber = ["263780166288@s.whatsapp.net"] //YOUR NUMBER
-global.ownerweb = "" //YOUR WEB//OPTIONAL
-global.websitex = "" //OPTIONAL
-global.wagc = "https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A"
-global.wach = 'https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A'
-global.saluran = "https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A"
-global.themeemoji = '🪀'
-global.wm = "Malvin King Tha Best"
-global.botscript = 'ʙᴏᴛ sᴄʀɪᴘᴛ ɪɴ\nlink : https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A'
-global.packname = "Made With ❤️ By"
-global.author = "\n\nLordMk\n Dev : Malvin"
-global.creator = "263780166288@s.whatsapp.net"
+//———————[ Media Config ]—————————//
+global.img = "https://files.catbox.moe/641pvo.jpg"
+global.thumbxm = "https://files.catbox.moe/q57r0k.jpg"
+global.thumbbc = "https://files.catbox.moe/641pvo.jpg"
+global.thumb = [ 
+    "https://files.catbox.moe/641pvo.jpg",
+    "https://i.ibb.co/Z1zG8ndV/malvin-xd.jpg"
 
+]
 
-////////////////////////////////////////////////////////
+//—————[ Broadcast Config ]——————————//
+// Delay Jpm & Pushctc || 1000 = 1 second
+global.delayJpm = 3500
+global.delayPushkontak = 5000
+global.namakontak = "AutoSave M-K"
 
+//——————[ Message Config ]——————————//
 global.mess = {
-    wait: "*_ᴡᴀɪᴛ ᴛɪʟʟ ɪᴛ'ᴅ ᴘʀᴏᴄᴇssᴇᴅ._*",
-    success: "Success!",
-    on: "ᴇɴᴀʙʟᴇᴅ",
-    off: "ᴅɪsᴀʙʟᴇᴅ",
-    query: {
-        text: "Where's the text, please?",
-        link: "Where's the link, please?",
-    },
-    error: {
-        feature: "Sorry, there is a feature error. Please contact the bot developer via chat for it to be fixed.",
-    },
-    only: {
-        group: "Sorry, this feature is only available in groups.",
-        private: "Sorry, this feature is only available in private chats.",
-        owner: "Sorry, this feature is only available for the bot owner.",
-        admin: "Sorry, this feature is only available for bot admins.",
-        badmin: "Sorry, it looks like you are not an admin, so you can't use this feature.",
-        premium: "Sorry, you are not a premium user yet. To become a premium user, please contact the owner using .owner.",
-    }
+    success: 'sᴜᴄᴄᴇssғᴜʟʏ',
+    admin: '[ !! ] *sʏsᴛᴇᴍ*\nᴏɴʟʏ ғᴏʀ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴ',
+    botAdmin: '[ !! ] *sʏsᴛᴇᴍ*\nʙᴏᴛ ɪs ɴᴏᴛ ᴀᴅᴍɪɴ ʏᴇᴛ',
+    creator: '[ !! ] *sʏsᴛᴇᴍ*\nᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪs ᴏɴʟʏ ғᴏʀ ᴏᴡɴᴇʀ',
+    group: '[ !! ] *sʏsᴛᴇᴍ*\nᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪs ᴏɴʟʏ ғᴏʀ ɢʀᴏᴜᴘs',
+    private: '[ !! ] *sʏsᴛᴇᴍ*\nᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪs ᴏɴʟʏ ғᴏʀ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ',
+    wait: '[ !! ] *sʏsᴛᴇᴍ*\nᴘʟᴇᴀsᴇ ᴡᴀɪᴛ, ᴘʀᴏᴄᴇssɪɴɢ...',
 }
 
-//========================================\\
-global.decor = {
-	menut: '❏═┅═━–〈',
-	menub: '┊•',
-	menub2: '┊',
-	menuf: '┗––––––––––✦',
-	hiasan: '꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷',
-
-	menut: '––––––『',
-    menuh: '』––––––',
-    menub: '┊☃︎ ',
-    menuf: '┗━═┅═━––––––๑\n',
-	menua: '',
-	menus: '☃︎',
-
-	htki: '––––––『',
-	htka: '』––––––',
-	haki: '┅━━━═┅═❏',
-	haka: '❏═┅═━━━┅',
-	lopr: 'Ⓟ',
-	lolm: 'Ⓛ',
-	htjava: '❃'
-}
-
-//===========================//
-
-//new
-global.prefix = ['.']
-global.sessionName = 'session' // Jangan di ubah takut nanti error
-global.hituet = 0
-//media target
-global.thum = fs.readFileSync("./data/image/thumb.jpg") //ur thumb pic
-global.log0 = fs.readFileSync("./data/image/thumb.jpg") //ur logo pic
-global.err4r = fs.readFileSync("./data/image/thumb.jpg") //ur error pic
-global.thumb = fs.readFileSync("./data/image/thumb.jpg") //ur thumb pic
-global.filename = "©ᴅᴇᴠ : ᴍᴀʟᴠɪɴ ᴋɪɴɢ"
-global.defaultpp = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60' //default pp wa
-
-//menu image maker
-global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-global.flarun = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-global.flasmurf = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=smurfs-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-
-global.keyopenai = "pk-pIWAlRroXTOAigkWdHcYvmlmgzEQXuoMWbVAaLAVZswSRbEB"
-//documents variants
-global.doc1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
-global.doc2 = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
-global.doc3 = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
-global.doc4 = 'application/zip'
-global.doc5 = 'application/pdf'
-global.doc6 = 'application/vnd.android.package-archive'
+// *** message *** 
+global.closeMsgInterval = 30; // 30 minutes. maximum 60 minutes, minimum 1 minute
+global.backMsgInterval = 2; // 2 hours. maximum 24 hours, minimum 1 hour
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
-	fs.unwatchFile(file)
-	console.log(chalk.redBright(`Update'${__filename}'`))
-	delete require.cache[file]
-	require(file)
+    fs.unwatchFile(file)
+    console.log(chalk.redBright(`Update ${__filename}`))
+    delete require.cache[file]
+    require(file)
 })
