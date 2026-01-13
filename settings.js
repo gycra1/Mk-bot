@@ -20,15 +20,15 @@ const chalk = require('chalk')
 
 //———————[ Owner Config ]——————————//
 
-global.ownernumber = '263714757857' // Change to your number
-global.ownername = 'ᴍᴀʟᴠɪɴ ᴋɪɴɢ' // add ur name
+global.ownernumber = '255748028271' // Change to your number
+global.ownername = 'GYCRA JORDAN' // add ur name
 global.botMode ='public' // change to public or self
 
 //————————[ Bot Config ]—————————//
 
 global.SESSION_ID = ""; // add ur session id starts with starcore~
-global.namabot = "ᴍᴋ-ʙᴏᴛ"
-global.nomorbot = '263714757857' // Change to yourbot number
+global.namabot = "GYCRA-BOT"
+global.nomorbot = '255748028271' // Change to yourbot number
 global.pair = "MRMALVIN"
 global.version = '1.0.1'
 global.autojoingc = false
